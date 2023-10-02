@@ -8,9 +8,9 @@
     "typescript": "^5.0.0"
   },
   "scripts": {
-    "build": "bun build ./src/app.js --outdir ./src/build",
+    "build": "bun build ./src/app.js --outdir ./public/js",
     "dev": "bun run --watch index.ts",
-    "run": "bun run index.ts"
+    "start": "bun run index.ts"
   },
   "type": "module"
 }
