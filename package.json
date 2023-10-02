@@ -1,11 +1,16 @@
 {
   "name": "wedding-invitation",
   "module": "index.ts",
-  "type": "module",
   "devDependencies": {
     "bun-types": "latest"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
-  }
+  },
+  "scripts": {
+    "build": "bun build ./src/app.js --outdir ./src/build",
+    "dev": "bun run --watch index.ts",
+    "run": "bun run index.ts"
+  },
+  "type": "module"
 }
